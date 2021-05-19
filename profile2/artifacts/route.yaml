@@ -1,0 +1,13 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: stage-hello
+spec:
+  host: www.example.com
+  to:
+    kind: Service
+    name: taxi
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None

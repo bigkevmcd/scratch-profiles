@@ -1,0 +1,4 @@
+- key: config.route.host
+  file: artifacts/route.yaml
+  patchDestination:
+   - spec.host
